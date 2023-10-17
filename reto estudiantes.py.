@@ -1,0 +1,29 @@
+https://replit.com/join/dncobsuakx-diego-adieladie 
+#Challenge : Studen Evaluation.
+"""
+1. The user will give 3 values:
+  a) Average grade (0-100)
+  b) Classrin participation (yes/no)
+  c) Project score (0-100)
+2. Depending on the diferent conditions for each write different messages:
+  a) if average grade >= 75 and classrom paricipation "yes", the student is in good academic standing
+  b) if proje ct score is > 90, The student receives a distinction.
+  c) if average grade < 60 or classroom participation is "no", the student needs to improve their performance
+"""
+print("I am a program made with the objective of evaluating a student")
+name_s = input("What is the name of the student")
+average_grade = int(input("What is the average grade of the student (from 0-100)"))
+classroom_participation = input("Did the student participated in class? (yes/no)")
+project_score = int(input("And last, what was the score of the student in his/her project (from 0-100)"))
+
+if average_grade >= 75 and classroom_participation == "yes":
+  print(name_s, "is in a good academic standing") #Done
+if average_grade <= 60 and classroom_participation == "no":
+  print(name_s," needs to improve their perfomance") # Done
+if average_grade < 75 and classroom_participation == "yes":
+  print("The grade of", name_s,"need to improve, the participation is good")#Done
+if average_grade >=75 and classroom_participation == "no": 
+  print("The grade of", name_s,"is good, need to improve the participation")#Done
+
+if project_score >= 90:
+  print(name_s, "received a distinction!!") #Done
